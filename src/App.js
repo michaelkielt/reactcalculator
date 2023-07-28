@@ -25,7 +25,7 @@ function App() {
     <div className="App">
         <div className="calculator">
           <div className="display">
-              <span>(0)</span>
+             { result ? <span>(0)</span> : '' } { calc || "0"}
           </div>
 
           <div className="operators">

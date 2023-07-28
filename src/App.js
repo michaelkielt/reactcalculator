@@ -15,8 +15,9 @@ function App() {
     const digits = [];
 
     for (let i = 1; i < 10; i++) {
-      digits.push(<button onClick={() => updateCalc(i.toString()
-        )} key={i}>{i}
+      digits.push(<button onClick={() => updateCalc(i.toString())} 
+        key={i}>
+          {i}
         </button>
         )
     }

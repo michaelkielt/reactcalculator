@@ -36,6 +36,10 @@ function App() {
     
     return digits;
   }
+
+  const calculate = () => {
+    setCalc(eval(calc).toString());
+  }
   
   return (
     <div className="App">
@@ -64,7 +68,7 @@ function App() {
               </button>
               <button onClick={() => updateCalc('.')}>
                 .</button>
-              <button>=</button>
+              <button onClick={calculate}>=</button>
           </div>
         </div>
     </div>
